@@ -1,17 +1,17 @@
-@import "normalize.css";
+@import 'normalize.css';
 
 body {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: #E0E8FF url("./assets/pattern-background-desktop.svg") no-repeat center top / cover;
+  background: #e0e8ff url('./assets/pattern-background-desktop.svg') no-repeat center top / cover;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   @media screen and (max-width: 600px) {
-    background: #E0E8FF url("./assets/pattern-background-mobile.svg") no-repeat center top / cover;
+    background: #e0e8ff url('./assets/pattern-background-mobile.svg') no-repeat center top / cover;
   }
 }
 
@@ -24,7 +24,7 @@ body {
     opacity: 0.6;
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     font-size: 13px;
   }
 }
@@ -57,6 +57,6 @@ body {
   background-color: transparent;
 
   &:hover {
-    color: #1F2E55;
+    color: #1f2e55;
   }
 }
