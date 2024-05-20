@@ -1,4 +1,12 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Order summary card solution
+
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+### Screenshot
+
+![](./preview.jpg)
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
