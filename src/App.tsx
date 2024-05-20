@@ -1,33 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {OrderSummary} from "./components/OrderSummary/OrderSummary.tsx";
+import {useState} from "react";
+import {Product} from "./types";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [products] = useState<Product[]>([{id: '1', image: 'icon-music.svg', price: 59.99, title: 'Annual Plan', period: 'year', currency: 'USD'}])
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <OrderSummary products={products}/>
     </>
   )
 }
